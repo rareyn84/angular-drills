@@ -3,7 +3,22 @@
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
 	<body ng-controller="arrayController">
-	
+		<input type="text-box" placeholder="Search Database" ng-model="search">
+		<div class="userList">
+
+			<li ng-repeat="person in personData | filter: search">
+				<h4>{{ person.name }}</h4>
+				<div>Email: {{ person.email }}</div>
+				<div>Date Employed: {{ person.dateEmployed }}</div>
+				<div>Phone number: {{ person.phone }}</div>
+
+			</li>
+		</div>
+
+		{{test}}
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

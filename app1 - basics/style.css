@@ -1,0 +1,18 @@
+header {
+  background: lightgray;
+  display: inline-flex;
+  padding: 20px;
+  width: 100%;
+}
+h1 {
+  flex-grow: 1;
+}
+
+h3 {
+  padding: 0px 50px;
+
+}
+
+.whereTheWordsWent {
+  display: inline;
+}

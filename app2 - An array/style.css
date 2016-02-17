@@ -2,7 +2,29 @@
 	background-color: #D3D46A;
 	width: 100%;
 }
-.personData {
-	width: 24%;	
-	display: inline-block;
+.userList {
+	width: 100%;
+	display: flex;
+	list-style: none;
+	flex-direction: column;
+}
+
+.userList>li {
+	border: 1px solid black;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin: 10px;
+	width: 25%;
+
+}
+
+.userList>li>div {
+	padding: 3px;
+}
+
+.searchBox {
+	width: 100%;
+	margin: 20px;
+	height: 20px;
+
 }

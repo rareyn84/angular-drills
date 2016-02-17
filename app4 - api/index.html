@@ -1,7 +1,31 @@
 <html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<head>
+		<link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+		<title>Star Wars Planet Index | Because Nerdy</title>
+	</head>
+	<body ng-controller="apiController">
+		<h1 class="welcome">Welcome To The Star Wars Planet Index of Awesome!</h1>
+		<h3 class="welcome">Your one stop shop for learning more about Star Wars planets than you would ever really want to</h3>
+		<div class="planetList" ng-repeat="planet in planets">
+			<div class="planetInfo">
+				<h4>Name: {{planet.name}}</h4>
+				<div>
+					Population: {{planet.population}}</br>
+					Climate: {{planet.climate}}</br>
+					Diameter: {{planet.diameter}}</br>
+					Gravity: {{planet.gravity}}</br>
+					Terrain: {{planet.terrain}}</br>
+					Orbital Period: {{planet.orbital_period}} days</br>
+					Rotation Period: {{planet.rotation_period}} hours</br>
+					Surface Water: {{planet.surface_water}}%</br>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
